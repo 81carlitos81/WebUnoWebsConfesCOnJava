@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+
+    <title>Conferencia inteligente</title>
+  </head>
+  <body>
+    <h1>Conferencia inteligente</h1>
+    <h1 th:text="${saludo}"></h1>
+    <div class="card" style="width: 18rem">
+      <img
+        th:src="@{/bootstrap/images/argaonintell1.jpg}"
+        class="card-img-top"
+        alt="khe"
+      />
+      <div class="card-body">
+        <h5 class="card-title">COnferencia de Aragon Iinteligente</h5>
+        <p class="card-text">
+          Un grupo de profesores y estudiantes nos dieron una platica acerca de
+          un proyecto de gemelo digital en la fes aragon
+        </p>
+        <a th:href="@{/}" class="btn btn-primary">
+          VOLVER
+          <img
+            th:src="@{/bootstrap/images/casa.png}"
+            alt="volver a gome"
+            class="Logo-Home"
+          />
+        </a>
+      </div>
+    </div>
+    <script th:src="@{bootstrap/js/bootstrap.bundle.min.js}"></script>
+  </body>
+</html>

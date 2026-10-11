@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+
+    <title>Conferencia Open</title>
+  </head>
+  <body>
+    <h1>Conferencia Open</h1>
+    <h1 th:text="${saludo}"></h1>
+    <div class="card" style="width: 18rem">
+      <img
+        th:src="@{/bootstrap/images/ConfeOpen.jpeg}"
+        class="card-img-top"
+        alt="khe"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Conferencia de Open Source</h5>
+        <p class="card-text">
+          Un profesor nos dio una platica acerca como el open source a creado
+          riqueza a pesar de ser libre y como marcas famosas, han usado
+          elementos de open source para crear productos que venden millones
+        </p>
+        <a th:href="@{/}" class="btn btn-primary">
+          VOLVER
+          <img
+            th:src="@{/bootstrap/images/casa.png}"
+            alt="volver a gome"
+            class="Logo-Home"
+          />
+        </a>
+      </div>
+    </div>
+    <script th:src="@{bootstrap/js/bootstrap.bundle.min.js}"></script>
+  </body>
+</html>

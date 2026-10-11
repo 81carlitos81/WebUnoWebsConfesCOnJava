@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>Conferencia Musica</h1>
+    <h1 th:text="${saludo}"></h1>
+    <div class="card" style="width: 18rem">
+      <img
+        th:src="@{/bootstrap/images/argaonintell1.jpg}"
+        class="card-img-top"
+        alt="khe"
+      />
+      <div class="card-body">
+        <h5 class="card-title">COnferencia de Musica</h5>
+        <p class="card-text">
+          Unos profesores que imparten clase en la fes en actividades
+          culturales, nos dieron una pequeña charla acerca de la musica en el
+          dia a dia
+        </p>
+        <a th:href="@{/}" class="btn btn-primary">
+          VOLVER
+          <img
+            th:src="@{/bootstrap/images/casa.png}"
+            alt="volver a gome"
+            class="Logo-Home"
+          />
+        </a>
+      </div>
+    </div>
+    <script th:src="@{bootstrap/js/bootstrap.bundle.min.js}"></script>
+  </body>
+</html>
